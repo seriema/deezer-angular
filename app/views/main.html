@@ -8,15 +8,36 @@
 </div>
 
 <div class="jumbotron">
-  <h1>Deezer components</h1>
+  <h1>Deezer</h1>
   <p class="lead">
     With AngularJS
   </p>
 </div>
 
-<section>
-    
-</section>
+<div ng-controller="DeezerPlaylistCtrl">
+    <h2>Playlist</h2>
+
+    <h3>Playlist picture</h3>
+    <div class="media-object">
+        <img class="img-rounded" ng-src="{{picture}}" alt="Playlist picture" />
+        <span class="overlay">{{title}}</span>
+    </div>
+
+    <h3>Playlist song covers</h3>
+    <ul class="list-unstyled">
+        <li ng-repeat="song in tracks.data" class="media-object">
+            <img class="img-rounded" ng-src="{{song.album.cover}}?size=200x200" alt="{{song.title}} album cover" />
+            <span class="overlay">{{song.title | truncate:25}}</span>
+        </li>
+    </ul>
+</div>
+
+<div ng-controller="DeezerAlbumCtrl">
+    <h2>Album</h2>
+
+    <h3>Album cover</h3>
+    <img ng-src="{{cover}}" class="img-rounded" />
+</div>
 
 <footer class="footer">
     Made by <a href="https://twitter.com/seriemajp">@seriemajp</a>

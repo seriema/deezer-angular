@@ -77,3 +77,31 @@ body {
     border-bottom: 0;
   }
 }
+
+
+/* ---------------------- */
+.media-object {
+    display: inline-block;
+    position: relative;
+}
+.media-object .overlay {
+    background-color: rgba(33,33,33,0.5);
+    bottom: 0;
+    color: #eee;
+    left: 0;
+    line-height: 2em;
+    padding-left: 0.5em;
+    position: absolute;
+    right: 0;
+}
+.media-object .img-rounded + .overlay {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+.list-unstyled li {
+    display: inline-block;
+}
+
+

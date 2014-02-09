@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('deezerAngularApp', []);
+angular.module('deezerAngularApp', ['igTruncate']);
