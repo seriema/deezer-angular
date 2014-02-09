@@ -1,4 +1,4 @@
-deezer-queuer
+deezer-angular
 =============
 
-A simple way to queue songs in a playlist, for Deezer.
+Inspired by the Spotify components for a "standard" way of visualizing a playlist, album, etc, with interactions like starting to play the song etc when clicked.
